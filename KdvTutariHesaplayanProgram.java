@@ -8,10 +8,12 @@ public class KdvTutariHesaplayanProgram {
         tutar = inp.nextDouble();
         if (tutar > 0 && tutar < 1000) {
             kdvTutar = tutar * 0.18;
-            System.out.println("KDV tutarı:" + kdvTutar);
+            kdvliTutar=tutar+kdvTutar;
+            System.out.println("KDV tutarı:" + kdvliTutar);
         } else if (tutar > 1000) {
             kdvTutar = tutar * 0.08;
-            System.out.println("KDV tutarı:" + kdvTutar);
+            kdvliTutar=tutar+kdvTutar;
+            System.out.println("KDV tutarı:" + kdvliTutar);
         } else
             System.out.println("Tutarı Doğru Giriniz");
     }
