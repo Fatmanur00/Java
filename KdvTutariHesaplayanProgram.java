@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class KdvTutariHesaplayanProgram {
     public static void main(String[] args) {
-        double tutar, kdvOran, kdvTutar, kdvliTutar;
+        double tutar, kdvOran, kdvTutar;
         Scanner inp = new Scanner(System.in);
         System.out.println("Ücret tutarını giriniz:");
         tutar = inp.nextDouble();
