@@ -3,9 +3,7 @@ import java.util.Scanner;
 
 public class ArrayOrder {
         public static void main(String[] args) {
-            //patika.dev Java 101 Uygulaması @bilalertugrul
             Scanner input = new Scanner(System.in);
-            //Dizi boyutunu alıyoruz ve dizinin index değeri yerine yerleştiriyoruz.
             System.out.print("Dizi Boyutunu Giriniz : ");
             int indexArray = input.nextInt();
             int[] numbers = new int[indexArray];
@@ -15,7 +13,6 @@ public class ArrayOrder {
                 System.out.print((i+1) + ". Elemanı Gir : ");
                 numbers[i] = input.nextInt();
             }
-            //Dizi hafızaya kaydedildiği için döngü dışında istediğimiz gibi diziyi ekrana bastırabiliyoruz.
             System.out.println("Dizi : " + Arrays.toString(numbers));
             Arrays.sort(numbers);
             System.out.println("Sıralı : " + Arrays.toString(numbers));
